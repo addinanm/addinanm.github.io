@@ -1,0 +1,108 @@
+<!-- Addina Nurul mawaddah
+// TI-2B -->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <title>MySite</title>
+      <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+      <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+      <meta charset="utf-8">
+      <style>
+   img {
+     border: 4px solid #575D63;
+     margin: 20px;
+     padding: 10px;
+     width: 200px;
+     height: 100px;
+   }
+</style>
+  </head>
+  <body>
+    <div id="main">
+        <div class="container">
+            <div id="header"> 
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="biodata.html">Biodata</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="pemesanan.html">Pemesanan</a></li>
+                </ul>
+            </div><!--end header -->
+            <div></div>
+     
+            <div id="content2">
+                <h2>Addin Restaurant</h2>
+
+                <h3>Promo & Profil Addin Restaurant. </h3>
+                <div class="list">
+                  <img src="images/gambar.jpg">
+                  <h4>Segala makanan nusantara dengan paket dan promo menarik ada disini dengan harga terjangkau. bisa makan sepuasnya di Addin Restaurant</h4>
+                  <h5>harga mulai dari Rp 25.000 dan paket hemat untuk 4 orang serta paket liburan mulai dari Rp 100.000 </h5>
+                </div>
+
+                <div class="list">
+                  <img src="images/pemandangan.jpg">
+                  <h4>Pemandangan alam disekitar Addin Restaurant yang dapat dinikmati dengan hanya membeli paket tiket masuk anda dapat mengunjungi wisata sekitar</h4>
+                  <h5>Harga Paket Makan & wisata di Addin Restaurant mulai dari Rp 120.000/3 orang </h5>
+                </div>
+                <div class="list">
+                  <img src="images/spa.jpg">
+                  <h4>Paket Spa & Skincare - bisa memanjakan diri disini, dengan paket spa yang tersedia anda dapat spa & skincare sekaligus menimati pemandangan</h4>
+                  <h5>Harga Paket Spa & Skincare di Addin Restaurant mulai dari Rp 50.000- Rp 70.000 </h5>
+                </div>
+                <form>
+                <center>
+
+                <div id="map" style="height: 380px; width: 70%;" center></div>
+              <script>
+                function initMap() {
+                  // membuat objek untuk titik koordinat
+                  var lombok = {lat: -8.650979, lng: 116.324944};
+                  // membuat objek peta
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 9,
+                  center: lombok
+                  });
+                  // mebuat konten untuk info window
+                  var contentString = '<h2>Addin Restaurant!</h2>';
+                  // membuat objek info window
+                  var infowindow = new google.maps.InfoWindow({
+                  content: contentString,
+                  position: lombok
+                  });
+                  // membuat marker
+                  var marker = new google.maps.Marker({
+                    position: lombok,
+                  map: map,
+                  title: 'Pulau Lombok'
+                  });
+                  // tampilkan info window di atas marker
+                  infowindow.open(map, marker);
+                }
+              </script>
+              <script async defer
+              src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+              </script>
+              </center>
+              </form>
+
+
+
+                </div>
+            </div><!--end content-->
+         
+             
+        </div><!--end main container-->
+    </div><!--end main-->
+         
+<div id="footer">
+    <div class="container">
+        <p>Copyright &copy; Addina 2020<br />
+            All Rights Reserved</p>
+    </div><!--end footer container-->
+</div><!--end footer-->
+   
+  </body>
+</html>

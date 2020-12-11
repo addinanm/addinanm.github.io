@@ -1,0 +1,116 @@
+<!-- Addina Nurul mawaddah
+// TI-2B -->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <title>MySite</title>
+      <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+      <style>
+   img {
+     border: 4px solid #575D63;
+     margin: 20px;
+     padding: 10px;
+     width: 200px;
+     height: 100px;
+   }
+</style>
+  </head>
+  <body>
+    <div id="main">
+        <div class="container">
+            <div id="header"> 
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="biodata.html">Biodata</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="pemesanan.html">Pemesanan</a></li>
+                </ul>
+            </div><!--end header -->
+     
+            <div id="content">
+                <h2>Addin Restaurant</h2>
+                    <!--<img src="images/gambar.jpg" width="50%" height="50%" style="display: block; margin: auto;"> -->
+                <center><h3>Pemesanan tempat/menu In Addin Restaurant. </h3></center>
+                  <div class="login">
+                    <form action="#" method="POST" onSubmit="validasi()">
+                      <div>
+                        <label>ID Pembeli</label>
+                        <label>:</label>
+                        <input type="text" name="id" id="id" />
+                      </div>
+                      <div>
+                        <label>Nama</label>
+                        <label>:</label>
+                        <input type="email" name="nama" id="nama" />
+                      </div>
+                      <div>
+                        <label>Status</label>
+                        <label>:</label>
+                        <input type="radio" id="member">
+                        <label for="male">Member</label><br>
+                        <input type="radio" id="non">
+                        <label for="female">Non-Member</label><br>
+                      </div>
+                      <div>
+                        <label>Jenis Makanan</label>
+                        <label>:</label>
+                        <input type="checkbox" name="vehicle1" value="ayam">
+                        <label for="vehicle1"> Ayam</label><br>
+                        <input type="checkbox" name="vehicle2" value="lalapan">
+                        <label for="vehicle2"> Lalapan</label><br>
+                        <input type="checkbox" name="vehicle3" value="ikan">
+                        <label for="vehicle3"> Ikan</label><br><br>
+                        <input type="checkbox" name="vehicle3" value="kuah" checked>
+                        <label for="vehicle3"> Bakso</label><br><br>
+                      </div>
+                      <div>
+                        <label>Jumlah Pesanan</label>
+                        <label>:</label>
+                        <input type="text" name="jumlah" id="jumlah" />
+                      </div>
+                      <div>
+                        <input type="submit" value="Pesan" class="tombol">
+                      </div>
+                    </form>
+                  </div>
+                
+
+                </div>
+            </div><!--end content-->
+         
+            <div id="sidebar">
+                <div id="subscribe">
+                    <h3>Menu Makanan</h3>
+                    <ul>
+                        <li><a href="#">Segala Penyet(Ayam, Bebek)</a></li>
+                        <li><a href="#">Lalapan</a></li>
+                        <li><a href="#">Segala Ikan (Gurame, Nila)</a></li>
+                        <li><a href="#">Masakan Bumbu Kuning</a></li>
+                        <li><a href="#">Masakan Bumbu Bali</a></li>
+                        <li><a href="#">Bakso,Soto,Gule & Sate</a></li>
+                    </ul>
+                </div>
+                <div id="popular">
+                    <h3>Tour & Wisata</h3>
+                    <ul>
+                        <li><a href="#">Spa and Skincare</a></li>
+                        <li><a href="#">Pusat Oleh-Oleh</a></li>
+                        <li><a href="#">Pemandangan Alam</a></li>
+                    </ul>
+                </div>
+            </div><!--end sidebar-->
+             
+        </div><!--end main container-->
+    </div><!--end main-->
+         
+<div id="footer">
+    <div class="container2">
+        <p>Copyright &copy; Addina 2020<br />
+            All Rights Reserved</p>
+    </div><!--end footer container-->
+</div><!--end footer-->
+   
+  </body>
+</html>
